@@ -33,8 +33,8 @@ func main() {
 		conexion()
 
 		router := mux.NewRouter()
-		router.HandleFunc("/person", CrearUsuarioEndpoint).Methods("POST")
-		router.HandleFunc("/people", GetPeopleEndpoint).Methods("GET")
+		router.HandleFunc("/usuario", CrearUsuarioEndpoint).Methods("POST")
+		router.HandleFunc("/planes", GetPeopleEndpoint).Methods("GET")
 
 
 		http.ListenAndServe(":12345", router)
